@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane prefHeight="610.0" 
+      prefWidth="940.0" 
+      styleClass="main-screen" 
+      stylesheets="@../styles/home.css" 
+      xmlns="http://javafx.com/javafx/18" 
+      xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="12.0" layoutY="12.0" text="FINANCEIRO" textFill="#302d2d">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

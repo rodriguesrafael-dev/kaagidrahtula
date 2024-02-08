@@ -1,0 +1,78 @@
+.main-screen {
+	/*-fx-background-color: #BA68C8;*/
+	-fx-background-color: #ffccff;
+}
+
+.label-font-header {
+	-fx-font-family: Segoe UI;
+	-fx-font-size: 24px;
+    -fx-font-weight: bold;
+	-fx-text-fill: #455A64;
+}
+
+.label-font {
+	-fx-font-family: Segoe UI;
+	-fx-font-size: 13.5px;
+    -fx-font-weight: bold;
+	-fx-text-fill: #424242;
+}
+
+.button-save {
+    -fx-font-family: Segoe UI;
+    -fx-font-weight: bold;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 18px;
+    -fx-font-size: 15px;
+    -fx-border-radius: 15.0;
+    -fx-background-radius: 15.0;
+    -fx-background-color: #558B2F;
+    -fx-text-fill: #ffffff;
+}
+
+.button-save:hover {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 18px;
+    -fx-background-radius: 15.0;
+    -fx-border-radius: 15.0;
+    -fx-background-color: #1B5E20;
+    -fx-text-fill: #ffffff;
+}
+
+.button-save:pressed {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 18px;
+    -fx-background-radius: 15.0;
+    -fx-border-radius: 15.0;
+    -fx-background-color: #263238;
+    -fx-text-fill: ghostwhite;
+}
+
+.button-cancel {
+    -fx-font-family: Segoe UI;
+    -fx-font-weight: bold;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 18px;
+    -fx-font-size: 15px;
+    -fx-border-radius: 15.0;
+    -fx-background-radius: 15.0;
+    -fx-background-color: #EF5350;
+    -fx-text-fill: #ffffff;
+}
+
+.button-cancel:hover {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 18px;
+    -fx-background-radius: 15.0;
+    -fx-border-radius: 15.0;
+    -fx-background-color: #B71C1C;
+    -fx-text-fill: #ffffff;
+}
+
+.button-cancel:pressed {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 18px;
+    -fx-background-radius: 15.0;
+    -fx-border-radius: 15.0;
+    -fx-background-color: #263238;
+    -fx-text-fill: ghostwhite;
+}

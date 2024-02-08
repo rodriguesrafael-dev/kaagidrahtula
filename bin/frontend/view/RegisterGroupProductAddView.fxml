@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pageContent" prefHeight="610.0" prefWidth="940.0" styleClass="main-screen" stylesheets="@../styles/home.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.view.RegisterGroupProductAddController">
+   <children>
+      <Label layoutX="12.0" layoutY="12.0" styleClass="label-font-header" stylesheets="@../styles/home.css" text="CADASTRO &gt;_GRUPO DE PRODUTO &gt;_NOVO" textFill="#302d2d">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField id="textField_Id" fx:id="textField_id" layoutX="35.0" layoutY="100.0" prefHeight="26.0" prefWidth="103.0" />
+      <Label layoutX="35.0" layoutY="77.0" styleClass="label-font" stylesheets="@../styles/home.css" text="Código" />
+      <TextField fx:id="textField_groupname" layoutX="144.0" layoutY="100.0" prefHeight="26.0" prefWidth="559.0" />
+      <Label layoutX="147.0" layoutY="77.0" styleClass="label-font" stylesheets="@../styles/home.css" text="Nome do grupo" />
+      <Button fx:id="buttonSave" layoutX="396.0" layoutY="144.0" mnemonicParsing="false" onAction="#onClickButtonSave" styleClass="button-save" stylesheets="@../styles/home.css" text="Salvar" />
+      <Button fx:id="buttonCancel" layoutX="553.0" layoutY="144.0" mnemonicParsing="false" onAction="#onClickButtonCancel" styleClass="button-cancel" stylesheets="@../styles/home.css" text="Cancelar" />
+   </children>
+</Pane>

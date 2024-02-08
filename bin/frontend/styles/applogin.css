@@ -1,0 +1,81 @@
+.login-pane {
+    -fx-background-color: linear-gradient(from 50px 50px to 100px 100px, #263238, #c71585);  
+    -fx-background-radius: 9.0;
+    -fx-border-width: 15px;
+    -fx-border-radius: 18.0;
+    -fx-border-color: #ebebeb;
+}
+
+.label-header {
+    -fx-font-family: Tahoma;
+    -fx-font-weight: bold;
+    -fx-padding: 12px; 
+    -fx-text-fill: #666666;
+    -fx-font-size: 14px;
+}
+
+.label-footer {
+    -fx-font-family: Tahoma;
+    -fx-font-weight: bold;
+    -fx-padding: 12px;
+    -fx-text-fill: #666666;
+    -fx-font-size: 14px;
+}
+
+.label-forgot-password {
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-padding: 12px;
+    -fx-text-fill: #ff6699;
+    -fx-font-size: 13px;
+}
+
+.textfield {
+    -fx-border-width: 3px;
+    -fx-border-radius: 12.0;
+    -fx-background-radius: 12.0;
+    -fx-text-fill: #990066;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 5px;  
+    -fx-prompt-text-fill: #cccccc;  
+    -fx-background-repeat : no-repeat;
+    -fx-background-position: right center;
+}
+
+.button {
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 5px;
+    -fx-font-size: 15px;
+    -fx-border-color: #e1e1e1;
+    -fx-border-radius: 15.0;
+    -fx-border-width: 1.5px;
+    -fx-background-radius: 15.0;
+    -fx-background-color: #c71585;
+    -fx-text-fill: #e1e1e1;
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 5px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-background-radius: 15.0;
+    -fx-border-radius: 15.0;
+    -fx-background-color: #ffb6c1;
+    -fx-text-fill: #c71585;
+}
+
+.button:pressed {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 5px;
+    -fx-background-radius: 15.0;
+    -fx-border-radius: 15.0;
+    -fx-background-color: #660066;
+    -fx-text-fill: ghostwhite;
+}

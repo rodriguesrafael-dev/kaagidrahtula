@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pageContent" prefHeight="610.0" prefWidth="940.0" styleClass="main-screen" stylesheets="@../styles/home.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.view.RegisterProductController">
+   <children>
+      <Label layoutX="12.0" layoutY="12.0" styleClass="label-font-header" stylesheets="@../styles/home.css" text="CADASTRO &gt;_PRODUTO" textFill="#302d2d">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGroup" cache="true" contentDisplay="TOP" graphicTextGap="0.0" layoutX="144.0" layoutY="74.0" mnemonicParsing="false" onAction="#onClickRegisterGroupView" prefHeight="63.0" prefWidth="110.0" styleClass="menu-item" stylesheets="@../styles/appmaindesk.css" text="Grupo" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="TH" size="63" tabSize="3" />
+         </graphic>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnSubgroup" contentDisplay="TOP" graphicTextGap="0.0" layoutX="266.0" layoutY="74.0" mnemonicParsing="false" onAction="#onClickRegisterSubgroupView" prefHeight="63.0" prefWidth="110.0" styleClass="menu-item" stylesheets="@../styles/appmaindesk.css" text="Subgrupo" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="SITEMAP" size="63" tabSize="3" />
+         </graphic>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnPrice" contentDisplay="TOP" graphicTextGap="0.0" layoutX="388.0" layoutY="74.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="110.0" styleClass="menu-item" stylesheets="@../styles/appmaindesk.css" text="Preço" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="TAGS" size="63" tabSize="3" />
+         </graphic>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnAddProduct" contentDisplay="TOP" graphicTextGap="0.0" layoutX="22.0" layoutY="74.0" mnemonicParsing="false" onAction="#onClickRegisterProductAddView" prefHeight="63.0" prefWidth="110.0" styleClass="menu-item" stylesheets="@../styles/appmaindesk.css" text="Novo" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="63" tabSize="3" />
+         </graphic>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </Button>
+   </children>
+</Pane>

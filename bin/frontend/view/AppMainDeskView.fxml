@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.view.AppMainDeskController">
+   <top>
+      <BorderPane prefHeight="50.0" prefWidth="600.0" styleClass="header" stylesheets="@../styles/appmaindesk.css" BorderPane.alignment="CENTER">
+         <right>
+            <MenuButton alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="6.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" styleClass="menu-button-header-userlogged" stylesheets="@../styles/appmaindesk.css" text="admin" BorderPane.alignment="CENTER">
+              <items>
+                <MenuItem id="item" mnemonicParsing="false" text="Conta">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="FOLDER_ACCOUNT" size="18" />
+                     </graphic></MenuItem>
+                <MenuItem id="item" mnemonicParsing="false" text="Sair">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" size="18" />
+                     </graphic></MenuItem>
+              </items>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets right="48.0" />
+               </BorderPane.margin>
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" size="24" />
+               </graphic>
+            </MenuButton>
+         </right>
+         <left>
+            <ImageView fitHeight="33.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../assets/logo_kaagi_technology.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="48.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </left>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="50.0" prefWidth="600.0" styleClass="footer" stylesheets="@../styles/appmaindesk.css" BorderPane.alignment="CENTER">
+         <center>
+            <Label styleClass="label-footer-copyright" stylesheets="@../styles/appmaindesk.css" text="Copyright©2022, KaaGi Technology. Todos os direitos reservados." BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </bottom>
+   <left>
+      <BorderPane prefHeight="499.0" prefWidth="307.0" styleClass="sideBar" stylesheets="@../styles/appmaindesk.css" BorderPane.alignment="CENTER">
+         <center>
+            <VBox prefHeight="499.0" prefWidth="294.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="18.0" mnemonicParsing="false" onAction="#returnHomeView" prefHeight="26.0" prefWidth="259.0" styleClass="sideBar-item" stylesheets="@../styles/appmaindesk.css" text="Home">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="HOME" size="36" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnRegister" alignment="BASELINE_LEFT" graphicTextGap="18.0" mnemonicParsing="false" onAction="#startRegisterView" prefHeight="26.0" prefWidth="259.0" styleClass="sideBar-item" stylesheets="@../styles/appmaindesk.css" text="Cadastro">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="FOLDER_MULTIPLE" size="36" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnNotaFiscal" alignment="BASELINE_LEFT" graphicTextGap="18.0" mnemonicParsing="false" onAction="#startInvoiceView" prefHeight="26.0" prefWidth="259.0" styleClass="sideBar-item" stylesheets="@../styles/appmaindesk.css" text="Nota Fiscal">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="FILE_XML" size="36" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnVenda" alignment="BASELINE_LEFT" graphicTextGap="18.0" mnemonicParsing="false" onAction="#startSaleView" prefHeight="26.0" prefWidth="259.0" styleClass="sideBar-item" stylesheets="@../styles/appmaindesk.css" text="Venda">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="SALE" size="36" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnAvaria" alignment="BASELINE_LEFT" graphicTextGap="18.0" mnemonicParsing="false" onAction="#startBreakdownView" prefHeight="26.0" prefWidth="259.0" styleClass="sideBar-item" stylesheets="@../styles/appmaindesk.css" text="Avaria">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="DELETE" size="36" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEstoque" alignment="BASELINE_LEFT" graphicTextGap="18.0" mnemonicParsing="false" onAction="#startInventoryView" prefHeight="26.0" prefWidth="259.0" styleClass="sideBar-item" stylesheets="@../styles/appmaindesk.css" text="Estoque">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="DATABASE" size="36" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnFinanceiro" alignment="BASELINE_LEFT" graphicTextGap="18.0" mnemonicParsing="false" onAction="#startFinancialView" prefHeight="26.0" prefWidth="259.0" styleClass="sideBar-item" stylesheets="@../styles/appmaindesk.css" text="Financeiro">
+                     <graphic>
+                        <MaterialDesignIconView glyphName="CURRENCY_USD" size="36" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnConfiguracoes" alignment="BASELINE_LEFT" graphicTextGap="18.0" mnemonicParsing="false" onAction="#startSettingsView" prefHeight="26.0" prefWidth="259.0" styleClass="sideBar-item" stylesheets="@../styles/appmaindesk.css" text="Configurações">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="COGS" size="36" />
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="18.0" left="18.0" top="18.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="pageContent" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
